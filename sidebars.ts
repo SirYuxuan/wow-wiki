@@ -1,4 +1,4 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   wikiSidebar: [
@@ -44,7 +44,7 @@ const sidebars: SidebarsConfig = {
             id: 'changelog/2026/index',
           },
           collapsed: false,
-          items: ['changelog/2026/2026-04-03-wiki-rebuild'],
+          items: ['changelog/2026/2026-04-03-1.0.0', 'changelog/2026/2026-04-03-1.0.1'],
         },
       ],
     },
