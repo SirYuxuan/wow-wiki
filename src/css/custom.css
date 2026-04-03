@@ -1,0 +1,228 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+:root {
+  --ifm-color-primary: #12746b;
+  --ifm-color-primary-dark: #10685f;
+  --ifm-color-primary-darker: #0f6259;
+  --ifm-color-primary-darkest: #0c5149;
+  --ifm-color-primary-light: #148077;
+  --ifm-color-primary-lighter: #15867d;
+  --ifm-color-primary-lightest: #1ba094;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(15, 98, 89, 0.08);
+  --wiki-navbar-active-bg: rgba(18, 116, 107, 0.12);
+  --wiki-navbar-border: rgba(18, 116, 107, 0.18);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #49b8ad;
+  --ifm-color-primary-dark: #34b0a4;
+  --ifm-color-primary-darker: #2faaa0;
+  --ifm-color-primary-darkest: #248b82;
+  --ifm-color-primary-light: #5ec0b6;
+  --ifm-color-primary-lighter: #68c4bb;
+  --ifm-color-primary-lightest: #87d1ca;
+  --docusaurus-highlighted-code-line-bg: rgba(73, 184, 173, 0.16);
+  --wiki-navbar-active-bg: rgba(73, 184, 173, 0.18);
+  --wiki-navbar-border: rgba(135, 209, 202, 0.24);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--wiki-navbar-border);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+}
+
+[data-theme='dark'] .navbar {
+  background: rgba(17, 24, 39, 0.82);
+}
+
+.navbar__link,
+.menu__link,
+.dropdown__link {
+  border-radius: 999px;
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar__link:hover,
+.menu__link:hover,
+.dropdown__link:hover {
+  background: var(--wiki-navbar-active-bg);
+}
+
+.navbar__link--active,
+.menu__link--active,
+.dropdown__link--active {
+  color: var(--ifm-color-primary) !important;
+  background: var(--wiki-navbar-active-bg);
+  font-weight: 700;
+}
+
+.tabs {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--ifm-pre-background);
+}
+
+.tabs__item {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none !important;
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 0;
+}
+
+.tabs__item--active {
+  background: transparent !important;
+  color: var(--ifm-color-primary) !important;
+}
+
+.tabs__item--active:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--ifm-color-primary);
+  border-radius: 3px 3px 0 0;
+}
+
+.tabs__item:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme='dark'] .tabs__item:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.tabs-container {
+  background: var(--ifm-pre-background);
+}
+
+.tabs-container .tabs {
+  margin: 0;
+  border-radius: 8px 8px 0 0;
+  background: transparent;
+}
+
+.tabs-container [role='tabpanel'] {
+  border-radius: 0 0 8px 8px;
+  padding: 0.75rem;
+  background: transparent;
+}
+
+.tabs-container pre {
+  margin: 0;
+  border-radius: 4px;
+}
+
+.markdown table {
+  display: table;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.markdown table th {
+  background: var(--ifm-color-primary);
+  color: white;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.markdown table th:nth-child(1),
+.markdown table td:nth-child(1) {
+  text-align: left;
+}
+
+.markdown table th:nth-child(n + 2):not(:last-child),
+.markdown table td:nth-child(n + 2):not(:last-child) {
+  text-align: center;
+}
+
+.markdown table th:last-child,
+.markdown table td:last-child {
+  text-align: left;
+}
+
+.markdown table tr:nth-child(2n) {
+  background: var(--ifm-table-stripe-background);
+}
+
+.markdown table td,
+.markdown table th {
+  padding: 0.75rem 1rem;
+  border-right: 1px solid var(--ifm-table-border-color);
+  position: relative;
+}
+
+.markdown table td:last-child,
+.markdown table th:last-child {
+  border-right: none;
+}
+
+.markdown table tr:not(:last-child) td {
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+[data-theme='dark'] .markdown table td {
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .markdown table {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.theme-admonition {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-admonition-info {
+  background: linear-gradient(45deg, #e0f2f1, #b2dfdb);
+  color: #0f6259;
+}
+
+.theme-admonition-caution {
+  background: linear-gradient(45deg, #fff3e0, #ffe0b2);
+  color: #e65100;
+}
+
+.theme-admonition-tip {
+  background: linear-gradient(45deg, #e8f5e9, #c8e6c9);
+  color: #2e7d32;
+}
+
+[data-theme='dark'] .theme-admonition {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .theme-admonition-info {
+  background: linear-gradient(45deg, #0b3d39, #0f6259);
+  color: #d6fffb;
+}
+
+[data-theme='dark'] .theme-admonition-caution {
+  background: linear-gradient(45deg, #e65100, #f57c00);
+  color: #fff3e0;
+}
+
+[data-theme='dark'] .theme-admonition-tip {
+  background: linear-gradient(45deg, #1b5e20, #2e7d32);
+  color: #e8f5e9;
+}

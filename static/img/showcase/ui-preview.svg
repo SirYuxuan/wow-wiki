@@ -1,0 +1,18 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="24" fill="#0F172A"/>
+  <rect x="32" y="32" width="1216" height="656" rx="20" fill="#111827" stroke="#8B5CF6" stroke-width="2"/>
+  <rect x="64" y="64" width="240" height="96" rx="16" fill="#1F2937"/>
+  <rect x="336" y="64" width="608" height="64" rx="16" fill="#312E81"/>
+  <rect x="976" y="64" width="240" height="160" rx="16" fill="#1F2937"/>
+  <rect x="64" y="192" width="220" height="360" rx="16" fill="#1F2937"/>
+  <rect x="308" y="224" width="664" height="280" rx="20" fill="#0B1120" stroke="#A78BFA" stroke-width="2" stroke-dasharray="10 10"/>
+  <rect x="1000" y="256" width="216" height="296" rx="16" fill="#1F2937"/>
+  <rect x="368" y="540" width="544" height="108" rx="18" fill="#1E1B4B"/>
+  <rect x="400" y="572" width="68" height="44" rx="10" fill="#8B5CF6"/>
+  <rect x="484" y="572" width="68" height="44" rx="10" fill="#7C3AED"/>
+  <rect x="568" y="572" width="68" height="44" rx="10" fill="#6D28D9"/>
+  <rect x="652" y="572" width="68" height="44" rx="10" fill="#7C3AED"/>
+  <rect x="736" y="572" width="68" height="44" rx="10" fill="#8B5CF6"/>
+  <text x="640" y="164" text-anchor="middle" fill="#EDE9FE" font-size="28" font-family="Segoe UI, Arial, sans-serif">雨轩魔兽整合包 UI 预览占位图</text>
+  <text x="640" y="342" text-anchor="middle" fill="#C4B5FD" font-size="20" font-family="Segoe UI, Arial, sans-serif">后续可替换为真实游戏截图</text>
+</svg>
